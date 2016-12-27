@@ -1,0 +1,4 @@
+2016-11-18 14:13:21,741 - 21 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161118/uow_set_uow_to_handler.py_20161118141321.log
+2016-11-18 14:13:21,741 - 22 - INFO - /data/BI/vdw/bat/uow_set_uow_to_handler.py buff.dw_user
+2016-11-18 14:13:21,745 - 27 - INFO - uow:20161116000000
+2016-11-18 14:13:21,746 - 28 - INFO - uow set next value success.

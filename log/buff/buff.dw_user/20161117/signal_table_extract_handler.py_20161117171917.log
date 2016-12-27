@@ -1,0 +1,12 @@
+2016-11-17 17:19:17,863 - 60 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161117/signal_table_extract_handler.py_20161117171917.log
+2016-11-17 17:19:17,863 - 61 - INFO - /data/BI/vdw/bat/signal_table_extract_handler.py buff.dw_user
+2016-11-17 17:19:17,863 - 62 - INFO - ex_sql_file:/data/BI/vdw/sql/buff/buff.dw_user.sel.sql
+2016-11-17 17:19:17,863 - 63 - INFO - tmp_ex_sql_file:/data/BI/vdw/tmp/buff/buff.dw_user.sel.sql20161117171917
+2016-11-17 17:19:17,863 - 64 - INFO - UOW:20161115000000,20161116000000
+2016-11-17 17:19:17,863 - 65 - INFO - ex_data_folder:/data/BI/vdw/in/buff/buff.dw_user/20161116000000
+2016-11-17 17:19:17,863 - 66 - INFO - ex_data_file:/data/BI/vdw/in/buff/buff.dw_user/20161116000000/buff.dw_user.dat
+2016-11-17 17:19:17,864 - 93 - INFO - command: psql -h 172.16.4.138 -p 5432 -d vliveshow -v ON_ERROR_STOP=1 -U bi_con
+ -f /data/BI/vdw/tmp/buff/buff.dw_user.sel.sql20161117171917
+2016-11-17 17:19:17,864 - 94 - INFO - {'{LEVEL_ID}': 'buff', '{TABLE_ID}': 'dw_user', '{ETL_ID}': 'buff.dw_user', '{UOW_FROM}': '20161115000000', '{UOW_TO}': '20161116000000'}
+2016-11-17 17:19:17,865 - 124 - INFO - extract_record:0
+2016-11-17 17:19:17,865 - 127 - ERROR - extract executed false.

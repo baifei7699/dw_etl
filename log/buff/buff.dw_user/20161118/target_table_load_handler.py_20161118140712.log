@@ -1,0 +1,10 @@
+2016-11-18 14:07:12,448 - 46 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161118/target_table_load_handler.py_20161118140712.log
+2016-11-18 14:07:12,449 - 47 - INFO - /data/BI/vdw/bat/target_table_load_handler.py buff.dw_user buff.dw_user.ins.sql
+2016-11-18 14:07:12,449 - 48 - INFO - sql_file:/data/BI/vdw/sql/buff/buff.dw_user.ins.sql
+2016-11-18 14:07:12,449 - 49 - INFO - tmp_sql_file:/data/BI/vdw/tmp/buff/buff.dw_user.ins.sql20161118140712
+2016-11-18 14:07:12,449 - 50 - INFO - UOW:20161115000000,20161116000000
+2016-11-18 14:07:12,449 - 61 - INFO - command: psql -h 172.16.15.131 -p 5432 -d bidw -v ON_ERROR_STOP=1 -U vu_buff -f /data/BI/vdw/tmp/buff/buff.dw_user.ins.sql20161118140712
+2016-11-18 14:07:12,449 - 62 - INFO - {'{LEVEL_ID}': 'buff', '{TABLE_ID}': 'dw_user', '{UOW_FROM}': '20161115000000', '{UOW_TO}': '20161116000000', '{ETL_ID}': 'buff.dw_user'}
+2016-11-18 14:07:12,456 - 71 - INFO - DELETE 24
+2016-11-18 14:07:12,457 - 71 - INFO - INSERT 0 24
+2016-11-18 14:07:12,457 - 78 - INFO - sql executed success.

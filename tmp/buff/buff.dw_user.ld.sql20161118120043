@@ -1,0 +1,2 @@
+truncate table buff_user;
+\copy buff_user from '/data/BI/vdw/in/buff/buff.dw_user/20161116000000/buff.dw_user.dat' with (format text);

@@ -1,0 +1,6 @@
+set -e: 
+export SHELLOPTS
+echo $t9
+echo $t10
+/home/feibo/workspace/etl_framework/work_folder/bat/buff/test.sh
+date

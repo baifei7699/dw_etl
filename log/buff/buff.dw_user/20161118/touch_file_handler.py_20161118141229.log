@@ -1,0 +1,5 @@
+2016-11-18 14:12:29,751 - 27 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161118/touch_file_handler.py_20161118141229.log
+2016-11-18 14:12:29,752 - 28 - INFO - /data/BI/vdw/bat/touch_file_handler.py buff.dw_user
+2016-11-18 14:12:29,752 - 29 - INFO - UOW:20161115000000,20161116000000
+2016-11-18 14:12:29,752 - 30 - INFO - touch_file:/data/BI/vdw/done/buff/buff.dw_user20161116000000
+2016-11-18 14:12:29,752 - 34 - INFO - touch file success

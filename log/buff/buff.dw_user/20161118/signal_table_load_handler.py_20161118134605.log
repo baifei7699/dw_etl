@@ -1,0 +1,14 @@
+2016-11-18 13:46:05,426 - 47 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161118/signal_table_load_handler.py_20161118134605.log
+2016-11-18 13:46:05,426 - 48 - INFO - /data/BI/vdw/bat/signal_table_load_handler.py buff.dw_user
+2016-11-18 13:46:05,426 - 49 - INFO - tmp_ld_sql_file:/data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118134605
+2016-11-18 13:46:05,426 - 50 - INFO - UOW:20161115000000,20161116000000
+2016-11-18 13:46:05,426 - 96 - INFO - extract_file:/data/BI/vdw/in/buff/buff.dw_user/20161116000000/buff.dw_user.dat
+2016-11-18 13:46:05,427 - 101 - INFO - extract record:24
+
+2016-11-18 13:46:05,427 - 110 - INFO - command: psql -h 172.16.15.131 -p 5432 -d bidw -v ON_ERROR_STOP=1 -U vu_buff -f /data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118134605
+2016-11-18 13:46:05,427 - 111 - INFO - {'{ETL_ID}': 'buff.dw_user', '{LEVEL_ID}': 'buff', '{UOW_FROM}': '20161115000000', '{UOW_TO}': '20161116000000', '{TABLE_ID}': 'dw_user'}
+2016-11-18 13:46:05,452 - 121 - INFO - TRUNCATE TABLE
+2016-11-18 13:46:05,453 - 121 - INFO - COPY 24
+2016-11-18 13:46:05,454 - 129 - INFO - extracted records:24 ; loaded records:24
+2016-11-18 13:46:05,454 - 136 - INFO - data verification success.
+2016-11-18 13:46:05,454 - 143 - INFO - load executed success.

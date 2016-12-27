@@ -1,0 +1,4 @@
+2016-11-18 11:25:27,723 - 47 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161118/signal_table_load_handler.py_20161118112527.log
+2016-11-18 11:25:27,723 - 48 - INFO - /data/BI/vdw/bat/signal_table_load_handler.py buff.dw_user
+2016-11-18 11:25:27,723 - 49 - INFO - tmp_ld_sql_file:/data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118112527
+2016-11-18 11:25:27,723 - 50 - INFO - UOW:20161115000000,20161116000000

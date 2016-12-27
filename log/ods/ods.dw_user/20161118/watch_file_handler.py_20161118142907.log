@@ -1,0 +1,5 @@
+2016-11-18 14:29:07,771 - 28 - INFO - log file:/data/BI/vdw/log/ods/ods.dw_user/20161118/watch_file_handler.py_20161118142907.log
+2016-11-18 14:29:07,771 - 29 - INFO - /data/BI/vdw/bat/watch_file_handler.py ods.dw_user buff.dw_user
+2016-11-18 14:29:07,771 - 30 - INFO - UOW:20161115000000,20161116000000
+2016-11-18 14:29:07,771 - 31 - INFO - watch_file:/data/BI/vdw/done/ods/buff.dw_user20161116000000
+2016-11-18 14:29:07,772 - 38 - INFO - file not generated

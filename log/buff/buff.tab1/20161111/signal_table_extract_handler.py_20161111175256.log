@@ -1,0 +1,10 @@
+2016-11-11 17:52:56,062 - 50 - INFO - ./signal_table_extract_handler.py buff.tab1
+2016-11-11 17:52:56,062 - 51 - INFO - ex_sql_file:/home/feibo/workspace/etl_framework/work_folder/sql/buff/buff.tab1.sel.sql
+2016-11-11 17:52:56,062 - 52 - INFO - tmp_ex_sql_file:/home/feibo/workspace/etl_framework/work_folder/tmp/buff/buff.tab1.sel.sql20161111175256
+2016-11-11 17:52:56,062 - 53 - INFO - UOW:20161006000000,20161007000000
+2016-11-11 17:52:56,062 - 54 - INFO - ex_data_folder:/home/feibo/workspace/etl_framework/work_folder/in/buff/buff.tab1/20161007000000
+2016-11-11 17:52:56,063 - 55 - INFO - ex_data_file:/home/feibo/workspace/etl_framework/work_folder/in/buff/buff.tab1/20161007000000/buff.tab120161007000000.dat
+2016-11-11 17:52:56,113 - 84 - INFO - command: psql -h 192.168.63.201 -p 5432 -d prod_db -v ON_ERROR_STOP=1 -U prod -f /home/feibo/workspace/etl_framework/work_folder/tmp/buff/buff.tab1.sel.sql20161111175256
+2016-11-11 17:52:56,114 - 85 - INFO - {'{UOW_TO}': '20161007000000', '{UOW_FROM}': '20161006000000', '{LEVEL_ID}': 'buff', '{ETL_ID}': 'buff.tab1', '{TABLE_ID}': 'tab1'}
+2016-11-11 17:52:56,203 - 94 - INFO - COPY 175
+2016-11-11 17:52:56,204 - 101 - INFO - extract executed success.

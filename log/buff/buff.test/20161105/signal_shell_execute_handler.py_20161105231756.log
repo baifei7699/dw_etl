@@ -1,0 +1,3 @@
+2016-11-05 23:17:56,085 - 28 - INFO - ./signal_shell_execute_handler.py buff.test test.sh 88 99 kkk tyy=900
+2016-11-05 23:17:56,085 - 29 - INFO - shell_file:/home/feibo/workspace/etl_framework/work_folder/bat/buff/test.sh
+2016-11-05 23:17:56,085 - 30 - INFO - UOW:20161008000000,20161009000000

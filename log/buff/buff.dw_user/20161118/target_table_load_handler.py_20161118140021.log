@@ -1,0 +1,12 @@
+2016-11-18 14:00:21,143 - 46 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161118/target_table_load_handler.py_20161118140021.log
+2016-11-18 14:00:21,143 - 47 - INFO - /data/BI/vdw/bat/target_table_load_handler.py buff.dw_user buff.dw_user.ins.sql
+2016-11-18 14:00:21,143 - 48 - INFO - sql_file:/data/BI/vdw/sql/buff/buff.dw_user.ins.sql
+2016-11-18 14:00:21,143 - 49 - INFO - tmp_sql_file:/data/BI/vdw/tmp/buff/buff.dw_user.ins.sql20161118140021
+2016-11-18 14:00:21,143 - 50 - INFO - UOW:20161115000000,20161116000000
+2016-11-18 14:00:21,144 - 61 - INFO - command: psql -h 172.16.15.131 -p 5432 -d bidw -v ON_ERROR_STOP=1 -U vu_buff -f /data/BI/vdw/tmp/buff/buff.dw_user.ins.sql20161118140021
+2016-11-18 14:00:21,144 - 62 - INFO - {'{TABLE_ID}': 'dw_user', '{UOW_TO}': '20161116000000', '{ETL_ID}': 'buff.dw_user', '{UOW_FROM}': '20161115000000', '{LEVEL_ID}': 'buff'}
+2016-11-18 14:00:21,150 - 71 - INFO - DELETE 0
+2016-11-18 14:00:21,150 - 71 - INFO - psql:/data/BI/vdw/tmp/buff/buff.dw_user.ins.sql20161118140021:70: ERROR:  syntax error at or near "int4"
+2016-11-18 14:00:21,150 - 71 - INFO - LINE 23: role int4,
+2016-11-18 14:00:21,151 - 71 - INFO - ^
+2016-11-18 14:00:21,151 - 75 - ERROR - sql executed false.

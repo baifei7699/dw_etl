@@ -1,0 +1,8 @@
+2016-11-18 11:28:38,784 - 47 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161118/signal_table_load_handler.py_20161118112838.log
+2016-11-18 11:28:38,784 - 48 - INFO - /data/BI/vdw/bat/signal_table_load_handler.py buff.dw_user
+2016-11-18 11:28:38,784 - 49 - INFO - tmp_ld_sql_file:/data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118112838
+2016-11-18 11:28:38,784 - 50 - INFO - UOW:20161115000000,20161116000000
+2016-11-18 11:28:38,784 - 104 - INFO - command: psql -h 172.16.15.131 -p 5432 -d bidw -v ON_ERROR_STOP=1 -U vu_buff -f /data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118112838
+2016-11-18 11:28:38,784 - 105 - INFO - {'{ETL_ID}': 'buff.dw_user', '{LEVEL_ID}': 'buff', '{UOW_FROM}': '20161115000000', '{UOW_TO}': '20161116000000', '{TABLE_ID}': 'dw_user'}
+2016-11-18 11:28:38,789 - 115 - INFO - psql:/data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118112838:1: ERROR:  relation "dw_user" does not exist
+2016-11-18 11:28:38,790 - 120 - ERROR - load executed false.

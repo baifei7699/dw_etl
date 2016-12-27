@@ -1,0 +1,1 @@
+\copy (select _id,title,createtime from liveshow where createtime >= to_char(to_timestamp('20161010000000','YYYYMMDDHH24MISS'),'yyyy-mm-dd hh24:mis:ss') ) to '/home/feibo/workspace/etl_framework/work_folder/in/buff/buff.tab1/20161011000000/buff.tab120161011000000.dat' with (format text)

@@ -1,0 +1,5 @@
+2016-11-11 17:19:11,147 - 50 - INFO - ./signal_table_extract_handler.py buff.tab1
+2016-11-11 17:19:11,199 - 51 - INFO - ex_sql_file:/home/feibo/workspace/etl_framework/work_folder/sql/buff/buff.tab1.sel.sql
+2016-11-11 17:19:11,199 - 52 - INFO - tmp_ex_sql_file:/home/feibo/workspace/etl_framework/work_folder/tmp/buff//home/feibo/workspace/etl_framework/work_folder/sql/buff/buff.tab1.sel.sql20161111171911
+2016-11-11 17:19:11,199 - 53 - INFO - UOW:20161010000000,20161011000000
+2016-11-11 17:19:11,200 - 54 - INFO - ex_data_file:/home/feibo/workspace/etl_framework/work_folder/in/buff/buff.tab1/20161011000000/buff.tab120161011000000.dat

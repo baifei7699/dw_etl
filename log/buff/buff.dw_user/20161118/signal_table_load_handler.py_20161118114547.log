@@ -1,0 +1,8 @@
+2016-11-18 11:45:47,710 - 47 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161118/signal_table_load_handler.py_20161118114547.log
+2016-11-18 11:45:47,711 - 48 - INFO - /data/BI/vdw/bat/signal_table_load_handler.py buff.dw_user
+2016-11-18 11:45:47,711 - 49 - INFO - tmp_ld_sql_file:/data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118114547
+2016-11-18 11:45:47,711 - 50 - INFO - UOW:20161115000000,20161116000000
+2016-11-18 11:45:47,711 - 104 - INFO - command: psql -h 172.16.15.131 -p 5432 -d bidw -v ON_ERROR_STOP=1 -U vu_buff -f /data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118114547
+2016-11-18 11:45:47,711 - 105 - INFO - {'{UOW_TO}': '20161116000000', '{UOW_FROM}': '20161115000000', '{ETL_ID}': 'buff.dw_user', '{LEVEL_ID}': 'buff', '{TABLE_ID}': 'dw_user'}
+2016-11-18 11:45:47,717 - 115 - INFO - psql:/data/BI/vdw/tmp/buff/buff.dw_user.ld.sql20161118114547:1: ERROR:  permission denied for relation buff_user
+2016-11-18 11:45:47,717 - 120 - ERROR - load executed false.

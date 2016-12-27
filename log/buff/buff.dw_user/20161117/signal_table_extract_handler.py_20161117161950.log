@@ -1,0 +1,10 @@
+2016-11-17 16:19:50,221 - 51 - INFO - log file:/data/BI/vdw/log/buff/buff.dw_user/20161117/signal_table_extract_handler.py_20161117161950.log
+2016-11-17 16:19:50,222 - 52 - INFO - /data/BI/vdw/bat/signal_table_extract_handler.py buff.dw_user
+2016-11-17 16:19:50,222 - 53 - INFO - ex_sql_file:/data/BI/vdw/sql/buff/buff.dw_user.sel.sql
+2016-11-17 16:19:50,222 - 54 - INFO - tmp_ex_sql_file:/data/BI/vdw/tmp/buff/buff.dw_user.sel.sql20161117161950
+2016-11-17 16:19:50,222 - 55 - INFO - UOW:20161115000000,20161116000000
+2016-11-17 16:19:50,222 - 56 - INFO - ex_data_folder:/data/BI/vdw/in/buff/buff.dw_user/20161116000000
+2016-11-17 16:19:50,222 - 57 - INFO - ex_data_file:/data/BI/vdw/in/buff/buff.dw_user/20161116000000/buff.dw_user.dat
+2016-11-17 16:19:50,222 - 84 - INFO - command: psql -h 172.16.4.138 -p 5432 -d vliveshow -v ON_ERROR_STOP=1 -U bi_con
+ -f /data/BI/vdw/tmp/buff/buff.dw_user.sel.sql20161117161950
+2016-11-17 16:19:50,223 - 85 - INFO - {'{UOW_TO}': '20161116000000', '{LEVEL_ID}': 'buff', '{UOW_FROM}': '20161115000000', '{TABLE_ID}': 'dw_user', '{ETL_ID}': 'buff.dw_user'}
