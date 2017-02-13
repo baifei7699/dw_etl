@@ -30,12 +30,10 @@ t_db = db(t_conf)
 uow_from = t_uow.getUOW_FROM(etl_id)
 uow_to = t_uow.getUOW_TO(etl_id)
 
-t_monitor_task_sql = 'select ID,HOST_LIST,SCRIPT_TYPE,SCRIPT, \
-                    EXPECTED_RESULT,SCHEDULE_INTERVAL \
-                    from MONITOR_CASE \
-                    WHERE IS_ENABLED=1 \
-                    AND SCHEDULE_START_TIME <= STR_TO_DATE(\'' + uow_from + '\',\'%Y%m%d%h%i%s\') \
-                    AND SCHEDULE_END_TIME >= STR_TO_DATE(\'' + uow_to + '\',\'%Y%m%d%h%i%s\')'
+t_monitor_task_sql = 'select ID,MONITOR_CASE_ID,UOW,HOST_NAME,SCRIPT_TYPE,SCRIPT, \
+                    TASK_STATUS \
+                    from MONITOR_CASE_RESULT \
+                    WHERE IS_PASSED=1 AND TASK_STATUS=0 ORDER BY CREATE_TIME DESC'
 
 
 t_log.logger.info('log file:' + t_conf.LOG_FILE)
