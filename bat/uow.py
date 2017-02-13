@@ -26,25 +26,26 @@ class uow:
 		self.__FOLDER_SQL = conf.FOLDER_SQL
 		self.__FOLDER_TMP = conf.FOLDER_TMP
 
-	def __getNextUOW(self,UOW_FROM,FREQ):
+	def __getNextUOW(self,UOW_FROM,FREQ,INTERVAL):
 		UOW_TO = 0
+		t_interval = int(INTERVAL)
 
 		t_time = datetime.strptime(UOW_FROM, "%Y%m%d%H%M%S")
 		if FREQ == 'YY' :
-			UOW_TO = (AddMonths(t_time,12)).strftime("%Y%m%d%H%M%S")
+			UOW_TO = (AddMonths(t_time,12*t_interval)).strftime("%Y%m%d%H%M%S")
 		elif FREQ == 'MM' :
-			UOW_TO = (AddMonths(t_time,1)).strftime("%Y%m%d%H%M%S")
+			UOW_TO = (AddMonths(t_time,1*t_interval)).strftime("%Y%m%d%H%M%S")
 		elif FREQ == 'WE' :
-			addTime = timedelta(weeks=1)
+			addTime = timedelta(weeks=1*t_interval)
 			UOW_TO = (t_time + addTime).strftime("%Y%m%d%H%M%S")
 		elif FREQ == 'DD' :
-			addTime = timedelta(days=1)
+			addTime = timedelta(days=1*t_interval)
 			UOW_TO = (t_time + addTime).strftime("%Y%m%d%H%M%S")
 		elif FREQ == 'HH' :
-			addTime = timedelta(hours=1)
+			addTime = timedelta(hours=1*t_interval)
 			UOW_TO = (t_time + addTime).strftime("%Y%m%d%H%M%S")
 		elif FREQ == 'MI' :
-			addTime = timedelta(seconds=60)
+			addTime = timedelta(seconds=60*t_interval)
 			UOW_TO = (t_time + addTime).strftime("%Y%m%d%H%M%S")
 
 		return UOW_TO
@@ -58,12 +59,16 @@ class uow:
 	def getUOW_TO(self,UOW_ID):
 		with open(self.FOLDER_UOW + os.sep + UOW_ID, 'rt') as f:
 			t_content = f.read()
-		t_uow = t_content.split(',')[0]
-		t_freq = t_content.split(',')[1]
-		t_uow = self.__getNextUOW(t_uow,t_freq)
+
+		t_interval = 1 
+		if len(t_content.split(','))==2:
+			t_uow,t_freq = t_content.split(',')
+		else:
+			t_uow,t_freq,t_interval = t_content.split(',')
+		t_uow = self.__getNextUOW(t_uow,t_freq,t_interval)
 		return t_uow
 
-	def initUOW(self,UOW_ID,FREQ,UOW_VALUE):
+	def initUOW(self,UOW_ID,FREQ,UOW_VALUE,INTERVAL):
 		if not(os.path.exists(self.FOLDER_UOW)):
 			os.makedirs(self.FOLDER_UOW)
 
@@ -92,19 +97,22 @@ class uow:
 			os.makedirs(self.__FOLDER_TMP)
 
 		with open(self.FOLDER_UOW + os.sep + UOW_ID,'wt') as f:
-			f.write(UOW_VALUE+','+FREQ)
+			f.write(UOW_VALUE+','+FREQ+','+INTERVAL)
 		return UOW_VALUE
 
 	def setUOW_TO(self,UOW_ID):
 		with open(self.FOLDER_UOW + os.sep + UOW_ID, 'rt') as f:
 			t_content = f.read()
 
-		t_uow = t_content.split(',')[0]
-		t_freq = t_content.split(',')[1]
-		to_time = self.__getNextUOW(t_uow,t_freq)
+		t_interval = 1 
+		if len(t_content.split(','))==2:
+			t_uow,t_freq = t_content.split(',')
+		else:
+			t_uow,t_freq,t_interval = t_content.split(',')
+		to_time = self.__getNextUOW(t_uow,t_freq,t_interval)
 
 		with open(self.FOLDER_UOW + os.sep + UOW_ID,'wt') as f:
-			f.write(to_time+','+t_freq)
+			f.write(to_time+','+t_freq+','+t_interval)
 
 		return to_time
 

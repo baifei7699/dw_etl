@@ -1,0 +1,4 @@
+2017-02-11 16:47:42,410 - 42 - INFO - log file:/home/bofei/worksapce/dw_etl/log/monitor_case/monitor_case.generate_case/20170211/monitor_task_generate_handler.py_20170211164742.log
+2017-02-11 16:47:42,411 - 43 - INFO - ./monitor_task_generate_handler.py monitor_case.generate_case
+2017-02-11 16:47:42,411 - 44 - INFO - monitor_task_sql:select ID,HOST_LIST,SCRIPT_TYPE,SCRIPT,                     EXPECTED_RESULT,SCHEDULE_INTERVAL                     from MONITOR_CASE                     WHERE IS_ENABLED=1                     AND SCHEDULE_START_TIME <= STR_TO_DATE('20170211090000','%Y%m%d%h%i%s')                     AND SCHEDULE_END_TIME >= STR_TO_DATE('20170211090500','%Y%m%d%h%i%s')
+2017-02-11 16:47:42,411 - 45 - INFO - UOW:20170211090000,20170211090500

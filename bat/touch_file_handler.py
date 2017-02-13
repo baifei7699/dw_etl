@@ -25,7 +25,7 @@ uow_to = t_uow.getUOW_TO(etl_id)
 touch_path = t_conf.FOLDER_DONE + os.sep + level_id  + os.sep + etl_id
 touch_file = touch_path + uow_to
 if not(os.path.exists(touch_path)):
-			os.makedirs(touch_path)
+	os.makedirs(touch_path)
 
 t_log.logger.info('log file:' + t_conf.LOG_FILE)
 t_log.logger.info(' '.join(sys.argv[0:]))

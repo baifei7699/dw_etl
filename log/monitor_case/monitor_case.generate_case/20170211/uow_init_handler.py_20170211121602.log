@@ -1,0 +1,3 @@
+2017-02-11 12:16:02,159 - 25 - INFO - log file:/home/bofei/worksapce/dw_etl/log/monitor_case/monitor_case.generate_case/20170211/uow_init_handler.py_20170211121602.log
+2017-02-11 12:16:02,160 - 26 - INFO - ./uow_init_handler.py monitor_case.generate_case MI 20170211090000 5
+2017-02-11 12:16:02,194 - 31 - INFO - uow init success.

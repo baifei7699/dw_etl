@@ -6,7 +6,7 @@ import configparser
 from datetime import datetime
 from datetime import timedelta
 
-working_folder = '/data/BI/vdw'
+working_folder = '/home/bofei/worksapce/dw_etl'
 conf_folder = 'conf'
 base_conf_name = 'base.conf'
 
