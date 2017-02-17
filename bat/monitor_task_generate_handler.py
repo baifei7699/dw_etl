@@ -76,4 +76,4 @@ for row in t_db.cur:
             t_db.db_execute(t_sql)
             t_num = t_num + 1
 
-t_log.logger.info('generate task:' + str(t_num))
+t_log.logger.info('generate task:' + str(t_num) + ' to task table')
